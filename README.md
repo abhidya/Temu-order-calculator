@@ -1,16 +1,27 @@
 # Temu Order Calculator
 
-Placeholder repository for a Temu order calculator project.
+Small local CLI for estimating an order total from a CSV export.
 
-No application source has been committed yet.
+## Demo
 
-## Intended next steps
+```bash
+python3 calculator.py
+```
 
-- Add the calculator source code.
-- Document the input format and expected output.
-- Add a small sample order dataset or fixture.
-- Add a runnable local demo or static page if the project is frontend-only.
+The default command reads `sample_order.csv` and prints line totals plus the
+final `order_total`.
+
+## CSV format
+
+Required columns:
+
+- `item`
+- `quantity`
+- `unit_price`
+- `discount`
+- `tax`
 
 ## Portfolio framing
 
-Until source code is added, this repository should be presented as a reserved project slot rather than a completed application.
+This is now a small utility demo, not a full Temu integration. It does not call
+Temu or scrape order history.
